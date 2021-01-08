@@ -4,6 +4,14 @@ class Question4 {
     
     public static void filter(ArrayList<Integer> list1, ArrayList<Integer> list2) {
         //This method removes all the elements in list1 that also appear in list2
+        
+        for(int n = list2.size()-1; n >= 0; n--){
+            for(int i = list1.size()-1; i >= 0; i--){
+                if(list2.get(n) == list1.get(i)){
+                 list1.remove(i);   
+                }
+            }
+        }
     }
     
     public static void main (String[] args) {

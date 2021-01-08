@@ -14,7 +14,6 @@ class Question2 {
             }
         }
         nums.remove(smallIndex);
-        
     }
   
     public static void main (String[] args) {
